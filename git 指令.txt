@@ -1,0 +1,54 @@
+git網址
+https://git-scm.com/download/win
+查看版本
+git --version
+
+使用者設定
+$ git config --global user.name "xxxx"
+$ git config --global user.email "xxxx"
+檢視使用者設定
+$ git config --list
+
+縮寫指令
+git config --global alias.pu push
+
+查看檔案狀態
+git status
+
+查看之前的commit紀錄
+git log
+條件
+某個人的commit
+--author="aaa | bbb"
+commit 內容有xxx
+--online --grep="xxx"
+檔案內容有xxx
+-S "xxx"
+時間
+--online --since="9am" --until="12am" --after="2017-01"
+
+刪除檔案
+git rm xxx
+
+修改最後一次commit紀錄
+git cpmmit --amend -m "xxxxx"
+新增檔案到最後一次commit
+git add xxx
+git commit --amend --no-edit
+
+回復檔案
+git checkout
+
+抓檔案下來
+git fetch
+
+1. 初始化
+git init
+2. 追蹤檔案
+git add --all
+3.建立遠端節點
+git remote add origin https
+4.建立遠端分支
+git branch -M main
+5.push
+ git push -u origin main
