@@ -1,0 +1,9 @@
+count = int(input())
+for i in range(count):
+    string = input()
+    #reStr = string[::-1] # 從後面開始前面結束 間隔一個
+    strCount = len(string)
+    reStr = []
+    for j in range(strCount-1,-1,-1):
+        reStr += string[j]
+    print(reStr)
